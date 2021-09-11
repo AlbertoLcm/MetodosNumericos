@@ -1,0 +1,52 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-size: 17px;
+}
+#title{
+    display: flex;
+    background-color: blueviolet;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+}
+#seleccion a{
+    text-decoration: none;
+    color: #fff;
+}
+#seleccion #a{
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+#seleccion h3{
+    margin-top: 10px;
+}
+#datos{
+    border-radius: 5px;
+}
+#resultados{
+    border-radius: 5px;
+}
+
+/* Estos son los estilos de las tablas*/
+#table{
+    background-color: #fff;
+    color: black;
+    border-radius: 5px;
+}
+table{
+    table-layout: fixed;
+  }
+#resultado td{
+    overflow: auto;
+    overflow-x: hidden;
+}
+footer{
+    background: #2f2f2f;
+    min-height: 100px;
+    border-top: 1px solid rgb(41, 41, 41);
+}
+footer p{
+    color: #f3f3f3;
+    text-align: center;
+}
