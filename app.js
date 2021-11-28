@@ -1,7 +1,10 @@
 const express = require("express");
+require('dotenv').config();
 
 const app = express();
 const port = process.env.PORT;
+
+console.log(port)
 
 //Servir contenido estatico
 app.use(express.static('public')); //le mandamos el path

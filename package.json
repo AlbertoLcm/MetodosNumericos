@@ -4,7 +4,8 @@
   "description": "Este es mi primer proyecto JS que subo a gitHub\r ```\r Un pequeño sitio donde se puden utilzar los algoritmos \r para encontrar aproximaciones de los ceros o raíces \r de una función real.\r ```",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
   },
   "repository": {
     "type": "git",
