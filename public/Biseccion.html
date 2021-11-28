@@ -1,65 +1,59 @@
 <!doctype html>
+<html lang="en">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-    <link rel="stylesheet" href="CSS/estilos.css">
+    <link rel="stylesheet" href="css/estilos.css">
     <!-- Bootswatch Darkly Theme -->
     <link
       href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/darkly/bootstrap.min.css"
       rel="stylesheet"
     />
-    <title>Programa 2</title>
+    <title>Bisección</title>
   </head>
 
   <body>
-    <!-- ////////// Este es el encabezado //////////// -->
+    <div id="biseccion"></div>
+    <!-- ////////// Header //////////// -->
     <header>
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-3">
         <div class="container-fluid">
-          <a class="navbar-brand" href="index.html">Métodos N.</a>
+          <a class="navbar-brand active" href="/">Métodos N.</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link " aria-current="page" href="Programa1.html">Programa 1</a>
+                <a class="nav-link active" aria-current="page" href="/Biseccion">Biseccion</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active"  href="Programa2.html">Programa 2</a>
+                <a class="nav-link"  href="/Aproximaciones">Aproximaciones</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="Programa3.html">Programa 3</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="Programa4.html">Programa 4</a>
+                <a class="nav-link" href="/NewtonRaphson">Newton Raphson</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
     </header>
+    <!-- ////////// Fin Header //////////// -->
 
     <!-- ////////// Aqui comienza el contenido ////////// -->
       
     <div class="container pt-3">
 
         <div class="d-flex p-3 justify-content-center">
-            <h3>Metodo de bisección</h3>
+            <h3>Método de bisección</h3>
         </div>
 
         <!-- Mensajes -->
         <div class="alert alert-danger d-none " role="alert" id="alerta">
           A simple danger alert—check it out!
-        </div>
-        <div class="alert alert-info d-none" role="alert" id="mensaje">
-          A simple info alert—check it out!
-        </div>
-        <div class="alert alert-warning d-none" role="alert" id="mens">
-          A simple info alert—check it out!
         </div>
         <!--// FIN mensajes //-->
 
@@ -69,28 +63,28 @@
                 <div class="col-10">
                     <form> 
                         <div class="mb-3">
-                            <label class="m-sm-0">Función</label>
+                            <label class="m-sm-0">Ingrese una función</label>
                             <input
                                 type="text"
-                                id="funcion"
+                                id="txtExpresion"
                                 class="form-control"
-                                placeholder="Ingrese una Función"
+                                placeholder="x^3+2x^2-9"
                             >   
                         </div>
                         <div class="mb-3">
                             <label class="m-sm-0">Numero a empezar</label>
                             <input
                                 type="text"
-                                id="inicio"
+                                id="txtInicialX"
                                 class="form-control"
-                                placeholder="Ingrese el numero para comenzar"
+                                placeholder="Valor para x"
                             >
                         </div>
                         <button type="button" class="btn btn-info" id="btnCalcular">
                             Calcular
                         </button>
                         <button type="button" class="btn btn-success ml-sm-2" id="btnBorrar">
-                            Limpiar
+                            Borrar
                         </button>
                         
                     </form>
@@ -108,11 +102,11 @@
         </div>  
         <!-- /// Aqui termina /// -->
 
-        <div class="mt-3">
+        <div class="mt-3 mb-3" id="contTable">
             <table class="table" id="table">
                 <thead>
                   <tr>
-                    <th scope="col">n</th>
+                    <th scope="col">N</th>
                     <th scope="col">Xa</th>
                     <th scope="col">f(Xa)</th>
                     <th scope="col">Xb</th>
@@ -122,7 +116,7 @@
                     <th scope="col">Error</th>
                   </tr>
                 </thead>
-                <tbody id="cont">
+                <tbody id="ContTable">
 
                 </tbody>
               </table>
@@ -130,7 +124,8 @@
 
       </div> 
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.0.0/math.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
-    <script src="JS/Programa2.js"></script>
+    <script src="js/biseccion.js" type="module"></script>
   </body>
 </html>

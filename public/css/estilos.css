@@ -9,14 +9,29 @@
     justify-content: center;
     align-items: center;
     height: 400px;
+    cursor: pointer;
 }
+#title h1{
+    text-align: center;
+}
+
 #seleccion a{
     text-decoration: none;
     color: #fff;
+    transition: all 300ms ease;
 }
+
 #seleccion #a{
+    background-color: aqua;
+
     margin-bottom: 20px;
     border-radius: 10px;
+    transition: all 300ms ease;
+}
+
+#relleno:hover{
+    background-color: rgb(20, 18, 18, 0.6);
+    transition: all 300ms ease;
 }
 #seleccion h3{
     margin-top: 10px;
@@ -28,25 +43,29 @@
     border-radius: 5px;
 }
 
-/* Estos son los estilos de las tablas*/
+/* ====== Tablas ====== */
+#contTable{
+    overflow-x: auto;
+}
 #table{
-    background-color: #fff;
+    background-color: #ffff;
     color: black;
     border-radius: 5px;
 }
-table{
-    table-layout: fixed;
-  }
-#resultado td{
-    overflow: auto;
-    overflow-x: hidden;
-}
+/* ====== Fin Tablas ====== */
+
+/* ====== Footer ====== */
 footer{
-    background: #2f2f2f;
+    background-color: blueviolet;
     min-height: 100px;
-    border-top: 1px solid rgb(41, 41, 41);
 }
 footer p{
     color: #f3f3f3;
     text-align: center;
+    
 }
+#iconos i{
+    margin-right: 10px;
+    color: #f3f3f3;
+}
+/* ====== Fin Footer ====== */
